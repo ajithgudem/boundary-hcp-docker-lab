@@ -6,9 +6,10 @@ listener "tcp" {
 }
 
 worker {
-  initial_upstreams = ["29078e00-5749-b7ba-c2a5-f11a47769ece.proxy.boundary.hashicorp.cloud:9202"]
-  auth_storage_path = "/boundary-hcp-worker/file/dockerlab"
+  initial_upstreams = ["bfad3188-f20a-0a06-9c28-cbea972dc318.proxy.boundary.hashicorp.cloud:9202"]
+  auth_storage_path = "/boundary-hcp-worker/file/worker2"
   tags {
-    type = ["dockerlab"]
+    type = ["worker3", "homelab"]
   }
 }
+

@@ -12,7 +12,6 @@ export WORKER_DEL=$(boundary workers list -format=json | jq -r '.items[] | selec
 
 boundary scopes delete -id=$ORG_ID_DEL
 
-
 boundary workers delete -id=$WORKER_DEL
 
 kind delete cluster
